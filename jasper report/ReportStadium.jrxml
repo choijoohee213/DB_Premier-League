@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.10.0.final using JasperReports Library version 6.10.0-unknown  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReportStadium" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c43a7f1f-e194-4a10-b736-35f89565a590">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="premier league"/>
+	<queryString language="SQL">
+		<![CDATA[select * from Stadium;]]>
+	</queryString>
+	<field name="stadium_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="stadium_id"/>
+	</field>
+	<field name="stadium_team_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="stadium_team_id"/>
+	</field>
+	<field name="stadium_capacity" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="stadium_capacity"/>
+	</field>
+	<field name="stadium_hometown" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="stadium_hometown"/>
+	</field>
+	<field name="stadium_name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="stadium_name"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="80" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="19" width="555" height="40" uuid="f42cd899-01af-499b-8535-013b7c5da8cb"/>
+				<textElement textAlignment="Center">
+					<font size="26" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Data from Stadium table"]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="23" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="1" width="90" height="30" uuid="cd126ab1-0bb6-4ed9-b096-8050feb1ed77">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="942a6eb3-0ca9-4e86-af01-057479f4b30c"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[stadium_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="96" y="0" width="104" height="50" uuid="4c16980b-2130-4be8-ace3-5a5aec29d5a9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cea226f4-8cc6-4c3a-8923-58daac540a20"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[stadium_team_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="0" width="70" height="50" uuid="60fd5b5b-b632-46b9-a447-5214b214ec35">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="815f47e9-ec71-4bbd-9196-996cc810b97a"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[stadium_capacity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="1" width="140" height="30" uuid="d3c45394-ceda-49b1-bca1-3adc59ced380">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4fe4ea2e-981a-43db-9385-bd8dadfd27bf"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[stadium_hometown]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="439" y="1" width="114" height="31" uuid="93ec0247-0402-43d0-8121-020c146f3e8d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1e0410dc-2bf2-41f2-8b73-2d9c07f14ac1"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[stadium_name]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="97" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="21" width="90" height="40" uuid="d6ed8999-0bda-47a5-b625-2bbd72e3a2a4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="942a6eb3-0ca9-4e86-af01-057479f4b30c"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{stadium_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="96" y="21" width="104" height="39" uuid="d5825c5a-2116-4e62-bce2-d87d753a1f6d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cea226f4-8cc6-4c3a-8923-58daac540a20"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{stadium_team_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="20" width="70" height="41" uuid="ec1c1dd0-1b8e-4b85-8fb7-f43a0cc4b014">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="815f47e9-ec71-4bbd-9196-996cc810b97a"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{stadium_capacity}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="290" y="20" width="140" height="40" uuid="fd33befe-f01c-44ed-b07d-f65b593e583b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4fe4ea2e-981a-43db-9385-bd8dadfd27bf"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{stadium_hometown}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="439" y="20" width="114" height="41" uuid="6671329f-4e2e-43f4-b432-d93f0245100d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1e0410dc-2bf2-41f2-8b73-2d9c07f14ac1"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{stadium_name}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="79" width="555" height="1" uuid="118db326-c82a-4bff-83c4-7716f3f04142"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="25" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="27" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="26" splitType="Stretch"/>
+	</summary>
+</jasperReport>

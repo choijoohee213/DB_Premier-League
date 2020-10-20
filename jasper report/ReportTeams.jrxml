@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.10.0.final using JasperReports Library version 6.10.0-unknown  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReportTeams" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a69e6cbf-9a17-4669-9ea8-9d81e89f6279">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="premier league"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<queryString language="SQL">
+		<![CDATA[select * from Teams;]]>
+	</queryString>
+	<field name="team_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="team_id"/>
+	</field>
+	<field name="stadium_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="stadium_id"/>
+	</field>
+	<field name="team_name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="team_name"/>
+	</field>
+	<field name="team_manager" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="team_manager"/>
+	</field>
+	<field name="team_points" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="team_points"/>
+	</field>
+	<field name="team_wins" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="team_wins"/>
+	</field>
+	<field name="team_draws" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="team_draws"/>
+	</field>
+	<field name="team_defeats" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="team_defeats"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="77" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="19" width="802" height="40" uuid="5007055a-e37f-4725-a744-de009dadcb01"/>
+				<textElement textAlignment="Center">
+					<font size="26" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Data from Teams table"]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="15" width="70" height="30" uuid="a8b09b0a-e670-4147-a5ba-fe3f80b71b32">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="baa26ea3-c9e5-47d9-8b2b-212a3c3eea74"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[team_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="15" width="80" height="30" uuid="e69bcbdd-6c19-4ce6-8892-898308c6e507">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="897c625c-bcb4-4feb-9fb1-e9faac48ed7c"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[stadium_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="168" y="15" width="120" height="30" uuid="58e2cbb7-bd51-4024-a0e8-238f45d00c2e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fd6d9390-0886-4616-9e96-2c0dfd4a550c"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[team_name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="295" y="15" width="175" height="30" uuid="a067697d-7c68-4517-aabf-2ecd7f12ce8c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c30e88c4-f356-4650-b0b8-390359df8435"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[team_manager]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="15" width="100" height="30" uuid="da92a3dd-8469-47f7-8803-c0d52ab36135">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e8aeeb19-83df-4b88-bdf7-41fd18296f59"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[team_points]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="580" y="15" width="90" height="30" uuid="4858f7ef-5317-45a2-82cf-aa471bba4859">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c9d8e4f5-8979-41da-8053-f798ef6e16ab"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[team_wins]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="680" y="15" width="100" height="30" uuid="ff0cc6ee-1268-4fe9-833d-99d4c6141598">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="85a76732-c718-46e1-81b6-4cac9c02dc59"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[team_draws]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="79" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="20" width="70" height="40" uuid="7e74ffa5-9f3b-4db2-96a8-3028324d47ca">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="baa26ea3-c9e5-47d9-8b2b-212a3c3eea74"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{team_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="20" width="80" height="40" uuid="44fae039-3a64-4b10-8b7f-663631d49536">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="897c625c-bcb4-4feb-9fb1-e9faac48ed7c"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{stadium_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="168" y="20" width="120" height="38" uuid="e77a3400-0fd2-4b13-8130-3e87ef8da0ea">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fd6d9390-0886-4616-9e96-2c0dfd4a550c"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{team_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="295" y="20" width="175" height="38" uuid="488266fd-ddeb-49dc-91cf-1754a8424f10">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c30e88c4-f356-4650-b0b8-390359df8435"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{team_manager}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="20" width="100" height="38" uuid="853d9bcd-b9ef-417f-ac00-163fb9d129dd">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e8aeeb19-83df-4b88-bdf7-41fd18296f59"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{team_points}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="580" y="20" width="90" height="38" uuid="73b89801-1622-459e-9aaa-69e6142d17c9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c9d8e4f5-8979-41da-8053-f798ef6e16ab"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{team_wins}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="680" y="20" width="100" height="40" uuid="1be501bd-ebf8-4566-86ac-f975ec096539">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="85a76732-c718-46e1-81b6-4cac9c02dc59"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{team_draws}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="70" width="800" height="1" uuid="4770c85c-6d71-4306-ad97-2a7347868802"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="21" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="25" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="27" splitType="Stretch"/>
+	</summary>
+</jasperReport>
