@@ -1,4 +1,4 @@
-# DB_Premier League
+# DB_Premier League ⚽
 
 <strong>19-20시즌 프리미어리그를 주제로한 데이터베이스와 데이터베이스를 관리하는 자바 어플리케이션
   
